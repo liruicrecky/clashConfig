@@ -48,15 +48,39 @@ mixin: # object
       - '*.mcdn.bilivideo.cn'
       # Windows Default LAN WorkGroup
       - 'WORKGROUP'
+      # steam
+      - '*.*.steamstat.us'
+      - '*.steamstat.us'
+      - 'steamstat.us'
+      - '*.*.akamaihd.net'
+      - '*.akamaihd.net'
+      - '*.*.steamstatic.com'
+      - '*.steamstatic.com'
+      - '*.*.steamcontent.com'
+      - '*.steamcontent.com'
+      - '*.*.steamusercontent.com'
+      - '*.steamusercontent.com'
+      - '*.*.steamgames.com'
+      - '*.steamgames.com'
+      - '*.*.steam-chat.com'
+      - '*.steam-chat.com'
+      - '*.*.steampowered.com'
+      - '*.steampowered.com'
     
     # Supports UDP, TCP, DoT, DoH. You can specify the port to connect to.
     # All DNS questions are sent directly to the nameserver, without proxies
     # involved. Clash answers the DNS question with the first result gathered.
     nameserver:
       - 192.168.31.1
-      - 119.29.29.29
+      - 119.29.29.29 # 百度
+      - 180.76.76.76 # 百度DNS
+      - 119.29.29.29 # 腾讯DNS
+      - 117.50.11.11 # ONE DNS拦截版 恶意网站拦截、广告过滤
+      - 117.50.10.10 # ONE DNS纯净版 直接返回其真实的响应结果
+      - 114.114.114.114 # 114DNS
       - https://doh.pub/dns-query
       - https://dns.alidns.com/dns-query
+      - https://doh.360.cn/dns-query # 360 DoH DNS
       # - tls://dns.rubyfish.cn:853 # DNS over TLS
       # - https://1.1.1.1/dns-query # DNS over HTTPS
 
